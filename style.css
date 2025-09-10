@@ -5,17 +5,26 @@ body {
     cursor: none;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    gap: 24px;
+    gap: 40px;
 }
 
-/* Custom Cursor */
+.title {
+    align-self: center;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #999DA3;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
 .cursor {
     position: fixed;
-    width: 400px;
-    height: 400px;
-    z-index: 9999;
+    width: 300px;
+    height: 300px;
+    z-index: 999;
     pointer-events: none;
     background-size: contain;
     background-repeat: no-repeat;
@@ -36,28 +45,62 @@ body {
     background-image: url('sleep3.png');
 }
 
+.mattress-row {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
 .mattress-container {
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
-    background-size: 400px 510px;
-    background-position: center; /* Optional: centers the image */
+    background-size: 320px 400px;
+    background-position: center; 
     background-repeat: no-repeat;
-    min-width: 500px;
+    min-width: 300px;
+    position: relative; 
 }
 
 .mattress-container:hover {
     animation: wiggle 0.5s ease-in-out infinite;
 }
 
+.mattress-container:hover .butt {
+    bottom: 10px;
+    opacity: 1;
+}
+
 .mattress {
-    width: 400px;
-    height: 510px;
+    width: 320px;
+    height: 400px;
     margin: 1px;
     cursor: none;
     align-self: center;
 }
+
+.butt {
+    width: 148px;
+    height: 36px;
+    font-size: 12px;
+    color: #999DA3;
+    background-color: transparent;
+    text-align: center;
+    border: 0.5px #999DA3 solid;
+    padding: 2px 8px;
+    border-radius: 80px;
+    cursor: none;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 10;
+}
+
 
 @keyframes wiggle {
     0%, 100% { transform: rotate(0deg); }
