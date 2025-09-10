@@ -1,0 +1,66 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    background: #010A1A;
+    min-height: 100vh;
+    cursor: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 24px;
+}
+
+/* Custom Cursor */
+.cursor {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    z-index: 9999;
+    pointer-events: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('awake.png');
+    transform: translate(-50%, -50%)
+}
+
+.cursor.sleep1 {
+    background-image: url('sleep1.png')
+}
+
+.cursor.sleep2 {
+    background-image: url('sleep2.png');
+}
+
+.cursor.sleep3 {
+    background-image: url('sleep3.png');
+}
+
+.mattress-container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-size: 400px 510px;
+    background-position: center; /* Optional: centers the image */
+    background-repeat: no-repeat;
+    min-width: 500px;
+}
+
+.mattress-container:hover {
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+
+.mattress {
+    width: 400px;
+    height: 510px;
+    margin: 1px;
+    cursor: none;
+    align-self: center;
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-1deg); }
+    75% { transform: rotate(1deg); }
+}
