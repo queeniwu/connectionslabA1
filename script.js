@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Cursor state changes
+    
     if (competitorMattress) {
         competitorMattress.addEventListener('mouseenter', function() {
             cursor.classList.add('sleep1');
