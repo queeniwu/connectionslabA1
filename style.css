@@ -13,7 +13,7 @@ body {
 
 .title {
     align-self: center;
-    font-size: 48px;
+    font-size: 42px;
     color: transparent; 
     -webkit-text-stroke: 0.6px white;
     text-align: center;
@@ -83,6 +83,7 @@ body {
 
 .container {
     width: 100%;
+    z-index: 10;
 }
 
 .mattress-row {
@@ -93,6 +94,7 @@ body {
     align-items: center;
     width: 100%;
     margin-bottom: 188px;
+    z-index: 10;
 }
 
 .mattress-container {
@@ -158,7 +160,7 @@ text {
     font-style: normal;
     text-transform: uppercase;
 
-    font-size: 52px;
+    font-size: 48px;
     fill: #010A1A; 
     text-anchor: middle; 
     z-index: 10;
@@ -169,7 +171,7 @@ text {
     top: 0;
     margin-bottom: -260px;
     width: 100%;
-    background: linear-gradient(to bottom, #91BBF6 0%, #91BBF6 calc(100% - 60px), transparent 100%);
+    background: linear-gradient(to bottom, #91BBF6 0%, #91BBF6 calc(100% - 120px), transparent 100%);
     color: black;
     white-space: nowrap;
     z-index: -1;
@@ -186,7 +188,7 @@ text {
     mask: none;
     -webkit-mask: none;
     border-bottom: none;
-    z-index: 10;
+    z-index: -1;
 
 }
 
@@ -246,8 +248,7 @@ text {
 
   .section .about{
     font-size: 24px;
-    font-family: "Climate Crisis", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Cossette Titre", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
