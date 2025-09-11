@@ -181,7 +181,7 @@ text {
 }
 
 .menu.scrolled {
-    padding: 18px;
+    /* padding: 18px; */
     background: transparent;
     mask: none;
     -webkit-mask: none;

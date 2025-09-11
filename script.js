@@ -64,6 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.menu');
+
+    console.log("levi:", header.classList)
+    console.log(window.scrollY)
     if (window.scrollY > 50) {       // adjust threshold
       header.classList.add('scrolled');
     } else {
